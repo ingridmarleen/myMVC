@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="col-sm-3 col-md-2 sidebar">
                         <ul class="nav nav-sidebar">
-                            <li><a href="#">Overview</a></li>
+                            <li><a href="//localhost/myMvc_v2/public/overview">Overview</a></li>
                             <li><a href="//localhost/myMvc_v2/public/articles">Articles</a></li>
                             <li><a href="//localhost/myMvc_v2/public/articles/create">Create article</a></li>
                         </ul>

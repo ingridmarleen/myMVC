@@ -18,6 +18,27 @@ include ('../init.inc.php');
  */
 	
 $collection = new RouteCollection();
+
+/*
+ * User routes
+ */
+
+/* Route to system = log in to the system
+ * 
+ * $collection->attachRoute(new Route('/', array(
+ *  '_controller' => 'myMvc\Controllers\UserController::login',
+ *  'methods' => 'GET'
+ * )));
+ * 
+ * Route to overview. UserController::isLoggedIn
+ * 
+ * $collection = new RouteCollection();
+ * $collection->attachRoute(new Route('/overview', array(
+ *  '_controller' => '',
+ *  'methods' => 'GET'
+ * )));
+ */
+
 $collection->attachRoute(new Route('/users', array(
     '_controller' => 'myMvc\Controllers\UserController::index',
     'methods' => 'GET'
