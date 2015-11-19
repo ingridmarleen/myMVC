@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dannyvankooten/php-router": "dev-master",
+        "wixel/gump": "dev-master"
+    }
+}
