@@ -59,7 +59,7 @@ use myMvc\Services\Database;
             
             $stmt->execute();
             
-            return "Article created";
+            return Database::conn()->lastInsertId();
             
         }
 
@@ -82,7 +82,7 @@ use myMvc\Services\Database;
             
             $stmt->execute();
             
-            return "Article updated";
+            return Database::conn()->lastInsertId();
             
         }
 

@@ -11,7 +11,7 @@
 		<textarea name="body" id="comment" class="form-control" rows="5"><?php echo $article['body']?></textarea>
 	</div>
 
-	<button class="btn btn-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Save </button>
+	<button class="btn btn-primary"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Save </button>
 </form>
 
 <?php include('/views/footer.php'); ?>

@@ -75,7 +75,7 @@ use myMvc\Services\Database;
 
             $stmt->execute();
             
-            return "User registered";
+            return Database::conn()->lastInsertId();
 	
         }
         
@@ -109,7 +109,7 @@ use myMvc\Services\Database;
 
             $stmt->execute();
                         
-            return 'Gegevens zijn gewijzigd';
+            return Database::conn()->lastInsertId();
             
         }
         

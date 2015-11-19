@@ -40,7 +40,7 @@ use myMvc\Models\ArticleModel;
         public function update ($id) {
             $article = $this->ArticleModel->update($id);
             
-            View::setView('views/article/1.php', compact('article'));
+            header('location: //localhost/myMvc_v2/public/articles/' . $article);
             echo "article has been updated";
         }
         
@@ -52,7 +52,10 @@ use myMvc\Models\ArticleModel;
             $title = $_POST['title'];
             $body = $_POST['body'];
             
-            $article = $this->ArticleModel->create($title,$body);    
+            $article = $this->ArticleModel->create($title,$body);
+            
+            header('location: //localhost/myMvc_v2/public/articles/' . $article);
+            echo "Article created";
         }
         
         public function delete () {

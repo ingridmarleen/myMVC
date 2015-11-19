@@ -40,7 +40,7 @@ use myMvc\Models\UserModel;
         public function update ($id) {
             $user = $this->UserModel->update($id);
             
-            View::setView('views/user/1.php', compact('user'));
+            header('location: //localhost/myMvc_v2/public/users/' . $user);
             echo "user has been updated";
         }
 
@@ -55,6 +55,10 @@ use myMvc\Models\UserModel;
             $password = $_POST['password'];
             
             $user = $this->UserModel->register($name,$email,$username,$password);
+            
+            header('location: //localhost/myMvc_v2/public/users/' . $user);
+            echo "Gebruiker geregistreerd";
+            
         }
         public function delete () {
             $user = $this->UserModel->delete($id);

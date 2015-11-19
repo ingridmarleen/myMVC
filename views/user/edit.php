@@ -15,7 +15,7 @@
 		<input name="username"required id="username" class="form-control" placeholder="Username" value="<?php echo $user['username']?>">
 	</div>
 
-	<button class="btn btn-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Save </button>
+	<button class="btn btn-primary"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Save </button>
 </form>
 
 <?php include('/views/footer.php'); ?>
